@@ -7,23 +7,18 @@
     <title>Home</title>
     <body>
     <h1>Home</h1>
+    <template>
+        <hr>
+        <br>
+        <img src="{image}" alt="Item Image"style= "display:flex;justify-content: space-around;color: white">
+        <h2>{title}</h2>
+        <p>Price: ${price}</p>
+        <p>Date: {date}</p>
+        <br>
+        <hr>
+    </template>
     <ul>
-        <li><hr>
-            <br>
-            <img src="{image}" alt="Item Image"style= "display:flex;justify-content: space-around;color: white">
-            <h2>{title}</h2>
-            <p>Price: ${price}</p>
-            <p>Date: {date}</p>
-            <br>
-            <hr></li>
-            <li><hr>
-                <br>
-                <img src="{image}" alt="Item Image"style= "display:flex;justify-content: space-around;color: white">
-                <h2>{title}</h2>
-                <p>Price: ${price}</p>
-                <p>Date: {date}</p>
-                <br>
-                <hr></li>
+        
     </ul>
     
     <script src = "main.js"></script>
