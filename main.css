@@ -27,7 +27,8 @@ p{
 .itemcontainer{
     display: flex;
     flex-grow : 1;
-    justify-content: left;
+    resize:both;
+    overflow:auto; /* something other than visible */
 }
 .itemcard{
      
