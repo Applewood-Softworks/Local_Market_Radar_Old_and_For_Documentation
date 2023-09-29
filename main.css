@@ -28,7 +28,7 @@ p{
     display: flex;
     flex-grow : 1;
     float: left;
-    resize:both;
+    resize: auto;
     overflow:auto; /* something other than visible */
 }
 .itemcard{
