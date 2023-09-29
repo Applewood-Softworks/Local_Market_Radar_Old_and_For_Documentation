@@ -27,6 +27,7 @@ p{
 .itemcontainer{
     display: flex;
     flex-grow : 1;
+    float: left;
     resize:both;
     overflow:auto; /* something other than visible */
 }
