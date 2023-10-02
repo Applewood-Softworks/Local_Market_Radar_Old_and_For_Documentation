@@ -27,7 +27,7 @@ p{
 .itemcontainer{
     display: flex;
     flex-grow : 1;
-    
+    margin-left: 17px;
     float: left;
     resize: auto;
     overflow:auto; 
