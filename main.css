@@ -77,3 +77,6 @@ p{
     font-size: 0.8em;
     overflow: auto;
 }
+input:focus {
+    background-color: #cecece; /* Change this to your preferred color */
+}
