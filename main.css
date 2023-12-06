@@ -24,6 +24,27 @@ p{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+a:link{
+    color: white;
+    text-decoration: none;
+}
+.signup{
+    
+    text-align: center;
+    vertical-align: middle;
+    font-weight : bold;
+    display: block;
+    font-size : 20px;
+    font-family : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(33, 33, 33);
+    border: 1px solid white;
+    border-radius: 7px;
+    
+    margin-left: 80%;
+    height: 70px;
+    width: 100px;
+}
+
 .itemcontainer{
     display: flex;
     flex-grow : 1;
