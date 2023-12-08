@@ -10,4 +10,4 @@ function addItem() {
         document.body.appendChild(clon);
     }
 }
-window.onload = addItem;
+addItem();
