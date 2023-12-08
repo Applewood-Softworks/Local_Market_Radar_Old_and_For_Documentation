@@ -44,7 +44,9 @@ a:link{
     
     width: 100px;
 }
-
+.footer{
+    display: block;
+}
 .itemcontainer{
     display: flex;
     flex-grow : 1;
