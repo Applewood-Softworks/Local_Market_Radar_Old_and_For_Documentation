@@ -45,13 +45,20 @@ a{
     width: 100px;
 }
 .footer{
-    display: block;
+    
+    background-color: rgb(33, 33, 33);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px; /* Adjust this value based on your design */
+    clear: both
 }
 .itemcontainer{
     display: flex;
     flex-grow : 1;
-    margin-top: 15px;
-    margin-left: 17px;
+    
+    margin: 7px 16px;
+    justify-content: space-between;
     float: left;
     
      
@@ -61,7 +68,7 @@ a{
     background-color: rgb(33, 33, 33);
     border: 1px solid white;
     border-radius: 10px;
-    margin: 17 auto;
+    
     padding: 10px;
     width: 210px;
     height: 245px;
