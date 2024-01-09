@@ -3,22 +3,42 @@
     <head> 
         <meta charset="UTF-8">
         <link rel="stylesheet" href="main.css" type="text/css" media="screen"/>
-        <script src = "Account.js"></script>
+        <script src="Account.js"></script>
         <title>Account Creation</title>
+        <style>
+            .light-mode {
+                background-color: white;
+                color: black;
+            }
+            
+            .dark-mode {
+                background-color: black;
+                color: white;
+            }
+        </style>
+        <script>
+            function toggleMode() {
+                var body = document.body;
+                body.classList.toggle("dark-mode");
+                body.classList.toggle("light-mode");
+            }
+        </script>
     </head>
 
-    <body>
-        <header>
-            <h1 style="text-align: center; font-family: sans-serif">Business Account Creation</h1>
-            <hr>
-        </header>
-        <div style="text-align: center;">
-            <input style="font-size: 24px;" type="text" placeholder="Username" tabIndex="1"><br>
-            <input style="font-size: 24px;" type="text" placeholder="Password" tabIndex="2"><br>
-            <input style="font-size: 24px;" type="text" placeholder="Store Name" tabIndex="3"><br>
-            <input style="width: 292px; height: 30px; font-size: 24px" type="text", id="Address" placeholder="Address" tabIndex="4"><br> 
-            <input style="width: 142px; height: 30px; font-size: 24px" type="text", id="Times" placeholder="Times Open" tabIndex="4"><input style="width: 142px; height: 30px; font-size: 24px" type="text", id="Days" placeholder="Days Open" tabIndex="4"><br> 
-        </div>
-        <script src = "Account.js"></script>
-    </body>
-</html>
+        
+        <body>
+            <header>
+                <h1 style="text-align: center; font-family: sans-serif">Business Account Creation</h1>
+                <hr>
+                <button style="position: absolute; top: 10px; right: 10px;" onclick="toggleMode()">Toggle Mode</button>
+            </header>
+            <div style="text-align: center;">
+                <input style="font-size: 24px;" type="text" placeholder="Username" tabIndex="1"><br>
+                <input style="font-size: 24px;" type="text" placeholder="Password" tabIndex="2"><br>
+                <input style="font-size: 24px;" type="text" placeholder="Store Name" tabIndex="3"><br>
+                <input style="width: 292px; height: 30px; font-size: 24px" type="text", id="Address" placeholder="Address" tabIndex="4"><br> 
+                <input style="width: 142px; height: 30px; font-size: 24px" type="text", id="Times" placeholder="Times Open" tabIndex="4"><input style="width: 142px; height: 30px; font-size: 24px" type="text", id="Days" placeholder="Days Open" tabIndex="4"><br> 
+            </div>
+            <script src="Account.js"></script>
+        </body>
+    </html>
