@@ -7,12 +7,18 @@
         <title>Account Creation</title>
         <style>
             .light-mode {
-                background-color: white;
+                background: linear-gradient(rgb(255, 255, 255), rgb(170, 180, 170)); 
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
                 color: black;
             }
             
             .dark-mode {
-                background-color : rgb(33, 33, 33);
+                background: linear-gradient(rgb(12, 12, 12), rgb(56, 65, 56)); 
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
                 color: white;
             }
         </style>
@@ -22,23 +28,31 @@
                 body.classList.toggle("dark-mode");
                 body.classList.toggle("light-mode");
             }
+            
+            document.addEventListener("DOMContentLoaded", function() {
+                var toggleButton = document.querySelector("button");
+                toggleButton.addEventListener("click", toggleMode);
+            });
         </script>
     </head>
 
         
         <body>
             <header>
-                <h1 style="text-align: center; font-family: sans-serif">Business Account Creation</h1>
+                <h1 style="text-align: center; font-family: sans-serif; font-size: 56px;">Local Market Business Signup</h1>
                 <hr>
-                <button style="position: absolute; top: 10px; right: 10px;" onclick="toggleMode()">Toggle Mode</button>
+                <button style="position: absolute; top: 10px; right: 10px; font-size: 20px;">Toggle Mode</button>
             </header>
             <div style="text-align: center;">
-                <input style="font-size: 24px;" type="text" placeholder="Username" tabIndex="1"><br>
-                <input style="font-size: 24px;" type="text" placeholder="Password" tabIndex="2"><br>
-                <input style="font-size: 24px;" type="text" placeholder="Store Name" tabIndex="3"><br>
-                <input style="width: 292px; height: 30px; font-size: 24px" type="text", id="Address" placeholder="Address" tabIndex="4"><br> 
-                <input style="width: 142px; height: 30px; font-size: 24px" type="text", id="Times" placeholder="Times Open" tabIndex="4"><input style="width: 142px; height: 30px; font-size: 24px" type="text", id="Days" placeholder="Days Open" tabIndex="4"><br> 
-            </div>
+                <input style="font-size: 48px;" type="text" placeholder="Username" tabIndex="1"><br>
+                <input style="font-size: 48px;" type="text" placeholder="Password" tabIndex="2"><br>
+                <input style="font-size: 48px;" type="text" placeholder="Store Name" tabIndex="3"><br>
+                <input style="font-size: 48px" type="text", id="Address" placeholder="Address" tabIndex="4"><br>
+                <div style="display: flex; justify-content: center;">
+                    <input style="font-size: 48px; width: 14.45%; margin-right: 11px;" type="text" id="OpeningTime" placeholder="Open Time" pattern="\d{2}:\d{2}:\d{2}" title="Please enter a valid time (hh:mm:ss)" required>
+                    <span style="font-size: 47.3px;">-</span>
+                    <input style="font-size: 48px; width: 14.5%; margin-left: 10px;" type="text" id="ClosingTime" placeholder="Close Time" pattern="\d{2}:\d{2}:\d{2}" title="Please enter a valid time (hh:mm:ss)" required>
+                </div>
             <script src="Account.js"></script>
         </body>
     </html>
